@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
     $(".proj-content .card").click(function() {
-        window.alert("hello");
-        window.location.href = `https://github.com/mohamedelmehammedi/${$(this).attr("data-proj-name")}`;
+        window.location.href = $(this).attr("data-url");
     });
 
     $(window).scroll(function(){
